@@ -1,3 +1,4 @@
+
 package com.exemplo.controller;
 
 import com.exemplo.model.User;
@@ -16,14 +17,6 @@ public class UserController {
 
     @Inject
     UserService userService;
-
-    // Rota: GET /api/users/
-    @GET
-    @Path("/")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String root() {
-        return "API está online";
-    }
 
     @POST
     @Path("/register")
